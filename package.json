@@ -1,0 +1,26 @@
+{
+  "name": "jsonhash",
+  "version": "1.0.0",
+  "description": "Hash json objects with blake2",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test",
+    "lint": "standard",
+    "validate": "npm ls"
+  },
+  "author": "Kristoffer Ström <kristoffer@rymdkoloni.se>",
+  "license": "MIT",
+  "dependencies": {
+    "blake2s": "^1.1.0",
+    "json-stable-stringify": "^1.0.0"
+  },
+  "devDependencies": {
+    "mocha": "^2.3.4",
+    "pre-commit": "^1.1.2",
+    "standard": "^5.4.1"
+  },
+  "pre-commit": [
+    "lint",
+    "test"
+  ]
+}
